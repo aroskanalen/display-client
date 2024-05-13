@@ -37,6 +37,7 @@ class ApiHelper {
           authorization: `Bearer ${token}`,
           'Authorization-Tenant-Key': tenantKey,
         },
+        referrerPolicy: 'unsafe-url',
       });
 
       if (response.ok === false) {
