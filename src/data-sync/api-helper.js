@@ -39,6 +39,7 @@ class ApiHelper {
       }
 
       response = await fetch(this.endpoint + path, {
+        referrerPolicy: 'no-referrer-when-downgrade',
         headers: {
           authorization: `Bearer ${token}`,
           'Authorization-Tenant-Key': tenantKey,
